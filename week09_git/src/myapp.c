@@ -30,6 +30,7 @@ int main(void) {
     printf("Enter expression (e.g. 1 + 2): ");
     scanf("%lf %s %lf", &a, op, &b);
     printf("Result = %.2lf\n", calculate(op, a, b));
+    printf("~~~ Good bye. See you again ~~~\n\n");
 
     return 0;
 }
