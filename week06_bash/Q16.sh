@@ -2,7 +2,7 @@
 
 file_wordcnt() {
 
-    if [ $([ -e "$FILE" ]; echo $?) != 0 ]; then
+    if [ ! -e $FILE ]; then
         echo "$1 파일이 존재하지 않습니다."
         return 1
     fi

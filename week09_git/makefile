@@ -21,7 +21,8 @@ $(BIN_DIR)/myapp: $(OBJ_DIR)/myapp.o $(LIB_DIR)/libmyops.so.1.0
 
 $(LIB_DIR)/libmyops.so.1.0: $(OBJ_DIR)/myadd.o $(OBJ_DIR)/mysub.o $(OBJ_DIR)/mymul.o $(OBJ_DIR)/mydiv.o $(OBJ_DIR)/mymod.o $(OBJ_DIR)/mypow.o
 	$(CC) -shared -o $@ $^
-	ln -sf libmyops.so.1.0 $(LIB_DIR)/libmyops.so
+	ln -sf libmyops.so.1 $(LIB_DIR)/libmyops.so
+	ln -sf libmyops.so.1.0 $(LIB_DIR)/libmyops.so.1
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) -c $< -o $@ $(CFLAGS)

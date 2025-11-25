@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 file_wordcnt() {
     files=$(ls *.txt)
@@ -8,7 +8,7 @@ file_wordcnt() {
     done
 }
 
-# file_wordcnt
+file_wordcnt
 
-SHCNT=$(find . -name "*.sh" | wc -l)
-echo "$SHCNT"
+# SHCNT=$(find . -name "*.sh" | wc -l)
+# echo "$SHCNT"
